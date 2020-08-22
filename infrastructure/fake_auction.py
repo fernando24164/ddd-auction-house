@@ -8,9 +8,12 @@ from domain.auction import Auction
 class FakeAuctionRepository(AuctionRepository):
     def __init__(self):
         super().__init__()
-        self.auctions: List[User]  = []
+        self.auctions: List[Auction] = []
 
-    def add(self, auction: Auction):
+    def add(self, auction: Auction) -> bool:
+        for ele in self.auctions:
+            if ele.auctions == auction.auction_id:
+                return False
         self.auctions.append(auction)
 
     def update(self, id_auction: str, params: Dict) -> bool:
