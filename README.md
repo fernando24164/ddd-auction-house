@@ -10,7 +10,7 @@ There is a Dockerfile ✨
 
 To build 🔨 container:
 
-`docker build . -t 'ddd-auction-house'`
+`docker build -t 'ddd-auction-house' .`
 
 To run 🔄 container in daemon mode:
 
@@ -22,5 +22,5 @@ To run 🔄 container in daemon mode:
 - [x] Infrastructured definition
 - [x] Add tests to project
 - [x] Service layer definition
-- [] Implement Flask API
-- [] Implement Click CLI
+- [ ] Implement Flask API
+- [ ] Implement Click CLI
