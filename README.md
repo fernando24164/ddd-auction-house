@@ -6,15 +6,13 @@ A humble example about Domain driven design with Python 3.8 last features
 
 ## How to run
 
-There is a Dockerfile ✨
+There is a docker-compose file ✨
 
-To build 🔨 container:
+[How to install docker-compose](https://docs.docker.com/compose/install/)
 
-`docker build -t 'ddd-auction-house' .`
+To run 🔄 in daemon mode:
 
-To run 🔄 container in daemon mode:
-
-`docker run -d ddd-auction-house`
+`docker-compose start`
 
 ## RoadMap 🗺️
 
@@ -22,5 +20,6 @@ To run 🔄 container in daemon mode:
 - [x] Infrastructured definition
 - [x] Add tests to project
 - [x] Service layer definition
+- [x] Added docker-compose file
 - [ ] Implement Flask API
 - [ ] Implement Click CLI
