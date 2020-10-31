@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 
 base_dir = Path.cwd()
-load_dotenv(dotenv_path=base_dir)
+load_dotenv(dotenv_path=str(base_dir))
 
 
 class Config:
@@ -15,7 +15,7 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    ENV = 'development'
+    ENV = "development"
 
 
 class TestingConfig(Config):
